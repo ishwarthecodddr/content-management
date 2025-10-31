@@ -1,0 +1,4 @@
+{
+  // Open integrated terminal in the workspace root (project folder)
+  "terminal.integrated.cwd": ""
+}
