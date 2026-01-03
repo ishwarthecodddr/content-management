@@ -10,7 +10,7 @@ export async function GET() {
 
 export async function POST(req: Request) {
   await connectToDb();
-  const { url } = await req.json();
-  const link = await Link.create({ url });
+  const { url, title } = await req.json();
+  const link = await Link.create({ url, title });
   return NextResponse.json(link);
 }

@@ -1,6 +1,10 @@
 import mongoose, { Schema, models } from "mongoose";
 const LinkSchema = new Schema(
   {
+    title: {
+      type: String,
+      required: true,
+    },
     url: {
       type: String,
       required: true,
